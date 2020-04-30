@@ -1,0 +1,199 @@
+.contenedor {
+  display: flex;
+  margin-left: 100px;
+  height: calc(100vh - 40px);
+  margin-right: 0;
+}
+
+.contenedor .principal {
+  width: 80%;
+}
+
+.contenedor .navbar {
+  padding-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor .navbar .search {
+  width: 30px;
+}
+
+.contenedor .contenido h3 {
+  color: rgba(94, 94, 94, 0.58);
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.contenedor .contenido .box {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  height: auto;
+}
+
+.contenedor .contenido .box .modelos {
+  padding: 10px;
+  background-color: white;
+  margin: 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .contenido .box .modelos .titulo {
+  background: transparent;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.contenedor .contenido .box .modelos .titulo h4 {
+  margin: 0;
+  background: transparent;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.contenedor .contenido .box .modelos .titulo img {
+  margin: 0;
+  width: 25px;
+  background: transparent;
+  margin-right: 10px;
+}
+
+.contenedor .contenido .box .modelos .number {
+  background: transparent;
+  float: right;
+  margin-bottom: 0;
+}
+
+.contenedor .contenido .box .modelos .number h2 {
+  background: transparent;
+  color: #5e5e5e9d;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.contenedor .operaciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  height: auto;
+  align-items: center;
+}
+
+.contenedor .operaciones h3 {
+  color: rgba(94, 94, 94, 0.58);
+  letter-spacing: 1px;
+}
+
+.contenedor .operaciones .botones button {
+  border: 0;
+  color: white;
+  padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor .operaciones .botones .delete {
+  background: #f56562;
+}
+
+.contenedor .operaciones .botones .delete:hover {
+  background: #f35754;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.contenedor .operaciones .botones .add {
+  background: #2f80ed;
+}
+
+.contenedor .operaciones .botones .add:hover {
+  background: #1975ec;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.contenedor .modelsTag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.contenedor .modelsTag h4 {
+  color: rgba(94, 94, 94, 0.58);
+}
+
+.contenedor .modelsTag .uno {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.contenedor .modelsTag span {
+  background: transparent;
+}
+
+.contenedor .modelsTag img,
+.contenedor .modelsTag h4 {
+  background: transparent;
+}
+
+.contenedor .models h4 {
+  font-weight: 400;
+}
+
+/* .contenedor .modelsBox {
+  overflow: scroll;
+  height: 20vh;
+} */
+
+.contenedor .models {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  height: auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.contenedor .models .uno {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.contenedor .models span {
+  background: transparent;
+}
+
+.contenedor .models img,
+.contenedor .models h4 {
+  background: transparent;
+}
+
+.contenedor .lateral {
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contenedor .lateral h3 {
+  background: white;
+  font-weight: 400;
+}
