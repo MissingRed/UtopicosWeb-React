@@ -1,0 +1,253 @@
+.contenedor {
+  display: flex;
+  margin-left: 100px;
+  height: calc(100vh - 40px);
+  margin-right: 0;
+}
+
+.principal {
+  width: 80%;
+}
+
+.navbar {
+  padding-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  width: 30px;
+}
+
+.contenido h3 {
+  color: rgba(94, 94, 94, 0.58);
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.box {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 60px;
+  height: auto;
+}
+
+.modelos {
+  padding: 10px;
+  background-color: white;
+  margin: 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+  background: transparent;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.titulo h4 {
+  margin: 0;
+  background: transparent;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.titulo img {
+  margin: 0;
+  width: 25px;
+  background: transparent;
+  margin-right: 10px;
+}
+
+.number {
+  background: transparent;
+  float: right;
+  margin-bottom: 0;
+}
+
+.number h2 {
+  background: transparent;
+  color: #5e5e5e9d;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.operaciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  height: auto;
+  align-items: center;
+}
+
+.operaciones h3 {
+  color: rgba(94, 94, 94, 0.58);
+  letter-spacing: 1px;
+}
+
+.botones button {
+  border: 0;
+  color: white;
+  padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.delete {
+  background: #f56562;
+}
+
+.delete:hover {
+  background: #f35754;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.botones .add {
+  background: #2f80ed;
+}
+
+.add:hover {
+  background: #1975ec;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.modelsTag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.modelsTag h4 {
+  color: rgba(94, 94, 94, 0.58);
+}
+
+.modelsTag .uno {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.modelsTag span {
+  background: transparent;
+}
+
+.modelsTag img,
+.contenedor .modelsTag h4 {
+  background: transparent;
+}
+
+.models h4 {
+  font-weight: 400;
+}
+
+.models {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  height: auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.models .uno {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.models span {
+  background: transparent;
+}
+
+.models img,
+.models h4 {
+  background: transparent;
+}
+
+.lateral {
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.lateral h3 {
+  background: white;
+  font-weight: 400;
+  margin-bottom: 10vh;
+}
+
+.formulario {
+  border-radius: 10px;
+}
+
+.formulario form {
+  background: #eef2fa;
+  height: auto;
+  margin: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.formulario p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.formulario input {
+  outline: none;
+  border: 0;
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.formulario button {
+  margin: 0;
+  border: 0;
+  border: 0;
+  color: white;
+  padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #2f80ed;
+  cursor: pointer;
+}
+
+.type {
+  display: none;
+}
+
+.boton {
+  display: flex;
+}
+
+.boton button {
+  margin-left: auto;
+}
