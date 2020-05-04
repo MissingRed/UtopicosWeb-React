@@ -21,10 +21,10 @@
   background: transparent;
 }
 
-.sidebar .container .links,
-.sidebar .links {
+.sidebar .container .links, .sidebar .links {
   outline: none;
   background: transparent;
+  opacity: 0.5;
 }
 
 .sidebar .container .perfil {
@@ -32,7 +32,6 @@
 }
 
 .sidebar .container .user {
-  fill: red;
   background-color: transparent;
   width: 50px;
   margin-bottom: 70px;
@@ -102,4 +101,14 @@
   background: #f35754;
   cursor: pointer;
   transition: 0.6s;
+}
+
+.items.selectedNav {
+  opacity: 1;
+}
+
+.items {
+  outline: none;
+  background: transparent;
+  opacity: 0.5;
 }

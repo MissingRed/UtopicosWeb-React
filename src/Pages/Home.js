@@ -1,12 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Sidebar from "../Components/Sidebar";
 import "../styles/home.css";
 import ListModel from "../Components/ListModel";
+import axios from "axios";
+
 // import app from "../Components/base";
 // import * as firebase from "firebase/app";
 
 const Home = () => {
   const [lista] = useState([1, 2]);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      await axios
+        .get("http://danielrf.com/api_vuforia/GetAllTargets.php")
+        .then((res) => {
+          console.log(res.data.results.length);
+          setData(res.data.results);
+        });
+    } catch (error) {}
+  };
+
+  const fetchData1 = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    fetch("http://danielrf.com/api_vuforia/PostNewTarget.php", {
+      mode: "no-cors",
+      method: "POST",
+      body: data,
+    });
+    alert("enviado");
+  };
 
   return (
     <React.Fragment>
@@ -28,25 +58,7 @@ const Home = () => {
                   <h4>Tarjetas</h4>
                 </div>
                 <div className="number">
-                  <h2>10</h2>
-                </div>
-              </div>
-              <div className="modelos">
-                <div className="titulo">
-                  <img src="Img/objeto.svg" alt="buscar" className="icon" />
-                  <h4>Objetos</h4>
-                </div>
-                <div className="number">
-                  <h2>15</h2>
-                </div>
-              </div>
-              <div className="modelos">
-                <div className="titulo">
-                  <img src="Img/folder.svg" alt="buscar" className="search" />
-                  <h4>Modelos</h4>
-                </div>
-                <div className="number">
-                  <h2>5</h2>
+                  <h2>{data.length}</h2>
                 </div>
               </div>
             </div>
@@ -79,6 +91,26 @@ const Home = () => {
         </div>
         <div className="lateral">
           <h3>Agregar Modelo</h3>
+          <div className="formulario">
+            <form onSubmit={fetchData1}>
+              <p>Nombre</p>
+              <input id="targetName" name="targetName" type="text" />
+              <p>Tarjeta</p>
+              <input id="fileToUpload" name="fileToUpload" type="file" />
+              <p>Video</p>
+              <input id="metadata" name="metadata" type="file" />
+              <input
+                id="type"
+                name="type"
+                type="text"
+                defaultValue="1"
+                className="type"
+              />
+              <div className="boton">
+                <button>Enviar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </React.Fragment>
