@@ -24,11 +24,10 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="container">
           <div className="perfil" onClick={() => setOpenPerfil(!openPerfil)}>
-            <img src="Img/img.svg" alt="Usuario" className="user" />
+            <img src="Img/perfil.png" alt="Usuario" className="user" />
           </div>
           {openPerfil ? (
             <div className="modal">
-              {" "}
               <p>{formatName()}</p>
               <button onClick={() => app.auth().signOut()}>
                 Cerrar Sesión
@@ -37,15 +36,15 @@ const Sidebar = () => {
           ) : (
             ""
           )}
-          <NavLink to="/" activeClassName="selectedNav" className="links">
+          <NavLink to="/home" activeClassName="selectedNav" className="items">
             <img src="Img/tablero.svg" alt="Inicio" className="dash" />
           </NavLink>
 
-          <NavLink to="/cloud" activeClassName="selectedNav" className="links">
+          <NavLink to="/cloud" activeClassName="selectedNav" className="items">
             <img src="Img/cloud.svg" alt="Nube" className="cloud" />
           </NavLink>
         </div>
-        <NavLink to="/info" activeClassName="selectedNav" className="links">
+        <NavLink to="/info" activeClassName="selectedNav" className="items">
           <img src="Img/Info.svg" alt="Info" className="info" />
         </NavLink>
       </div>
