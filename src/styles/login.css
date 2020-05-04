@@ -1,42 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
-
-*,
-html {
+/* *, html {
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
-	background: initial;
-}
+} */
 
 .login-container {
-	width: 100%;
-	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
+	width: calc(100% - 20px);
+	height: calc(100vh - 20px);
 	display: flex;
 	justify-content: center;
 	padding: 0%;
+	margin: 0;
+	padding: 0;
 }
 
 .login-container div {
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
 	width: 35%;
 	height: 40%;
 	display: flex;
 	align-items: center;
-	margin-top: 100px;
 	justify-content: center;
 	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	margin-top: 100px;
 }
 
 .login-container div img {
-	width: 40%;
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
+	/* width: 40%; */
+	margin: 0;
+	padding: 0;
 	margin-bottom: 50px;
 }
 
 .login-container div span {
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
+	margin: 0;
+	padding: 0;
 	margin-bottom: 50px;
 	color: #575757;
 }
 
 .login-container div form {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -44,7 +60,12 @@ html {
 	border-radius: 10px;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
 .login-container div form input {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
 	width: 100%;
 	height: 60px;
 	border: none;
@@ -53,7 +74,12 @@ html {
 	padding-left: 20px;
 	color: #575757;
 }
+
 .login-container div form button {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -61,24 +87,43 @@ html {
 	border: none;
 	background: rgb(47, 128, 237);
 	box-shadow: 0 10px 25px rgba(47, 128, 237, 0.2);
-	height: 40px;
-	width: 125px;
-	border-radius: 5px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
 	color: white;
 	font-weight: bold;
 	cursor: pointer;
 	outline: none;
 	transition: all 0.2s;
+	/* display: flex; */
+	/* align-items: center; */
 }
+
+.login-container div form button img {
+	margin: 0;
+	padding: 0;
+}
+
 .login-container div form button:hover {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
 	box-shadow: 0 10px 25px rgba(47, 128, 237, 0.4);
 }
 
 .line-input {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
 	border-top: 1px solid #dce2f0 !important;
 }
 
 .bobble {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: initial;
 	position: fixed;
 	bottom: -18vh;
 	width: 100%;
