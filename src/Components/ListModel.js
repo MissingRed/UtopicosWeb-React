@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import "../styles/home.css";
 
-const ListModel = () => {
+const ListModel = (props) => {
   return (
     <React.Fragment>
       <div className="models">
         <span className="uno">
           <input type="checkbox" />
-          <img src="Img/folderRed.svg" alt="buscar" className="search" />
-          <h4>Nombre</h4>
+          <img src="Img/pack.svg" alt="buscar" className="search" />
+          <h4>{props.name}</h4>
         </span>
-        <span>
-          <h4>02/15/20</h4>
+        <span className="dos">
+          <h4>Rating: {props.rank}</h4>
         </span>
         <span></span>
       </div>

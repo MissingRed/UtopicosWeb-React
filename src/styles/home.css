@@ -1,62 +1,91 @@
 .contenedor {
   display: flex;
+  margin: 10px;
   margin-left: 100px;
   height: calc(100vh - 40px);
   margin-right: 0;
 }
 
 .principal {
+  margin: 10px;
   width: 80%;
 }
 
 .navbar {
-  padding-top: 10px;
-  margin-bottom: 50px;
+  margin: 10px;
   display: flex;
   justify-content: space-between;
 }
 
+.navbar img {
+  margin: 10px;
+}
+
 .search {
+  margin: 10px;
   width: 30px;
 }
 
+.contenido {
+  margin: 10px;
+}
+
 .contenido h3 {
+  margin: 10px;
   color: rgba(94, 94, 94, 0.58);
   letter-spacing: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 3vh;
 }
 
 .box {
+  margin: 10px;
   display: grid;
   margin: 0;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 60px;
   height: auto;
 }
 
 .modelos {
+  margin: 10px;
   padding: 10px;
   background-color: white;
   margin: 0;
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.modelos1 {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  margin: 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(60deg, #66bb6a, #43a047);
 }
 
 .titulo {
+  margin: 10px;
   background: transparent;
   display: flex;
   text-align: center;
   align-items: center;
+  color: white;
 }
 
 .titulo h4 {
+  margin: 10px;
   margin: 0;
   background: transparent;
   font-size: 18px;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .titulo img {
+  margin: 10px;
   margin: 0;
   width: 25px;
   background: transparent;
@@ -64,33 +93,39 @@
 }
 
 .number {
+  margin: 10px;
   background: transparent;
   float: right;
   margin-bottom: 0;
 }
 
 .number h2 {
+  margin: 10px;
   background: transparent;
-  color: #5e5e5e9d;
+  /* color: #5e5e5e9d; */
   font-size: 36px;
   font-weight: 300;
+  color: white;
 }
 
 .operaciones {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
-  margin-top: 5%;
   height: auto;
   align-items: center;
+  margin-bottom: 1%;
 }
 
 .operaciones h3 {
+  margin: 10px;
   color: rgba(94, 94, 94, 0.58);
   letter-spacing: 1px;
 }
 
 .botones button {
   border: 0;
+  margin: 10px;
   color: white;
   padding: 10px;
   padding-top: 7px;
@@ -102,20 +137,30 @@
 }
 
 .delete {
+  margin: 10px;
   background: #f56562;
+  outline: none;
+  position: relative;
+  z-index: 90000;
 }
 
 .delete:hover {
+  margin: 10px;
   background: #f35754;
   cursor: pointer;
   transition: 0.6s;
 }
 
-.botones .add {
+.add {
+  margin: 10px;
   background: #2f80ed;
+  outline: none;
+  position: relative;
+  z-index: 90000;
 }
 
 .add:hover {
+  margin: 10px;
   background: #1975ec;
   cursor: pointer;
   transition: 0.6s;
@@ -130,28 +175,34 @@
 }
 
 .modelsTag h4 {
+  margin: 10px;
   color: rgba(94, 94, 94, 0.58);
 }
 
 .modelsTag .uno {
+  margin: 10px;
   display: flex;
   align-items: center;
   background: transparent;
 }
 
 .modelsTag span {
+  margin: 10px;
   background: transparent;
 }
 
 .modelsTag img, .contenedor .modelsTag h4 {
+  margin: 10px;
   background: transparent;
 }
 
 .models h4 {
+  margin: 10px;
   font-weight: 400;
 }
 
 .models {
+  margin: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,41 +213,58 @@
 }
 
 .models .uno {
+  margin: 10px;
+  width: 200px;
   display: flex;
   align-items: center;
   background: transparent;
 }
 
 .models span {
+  margin: 10px;
   background: transparent;
 }
 
 .models img, .models h4 {
+  margin: 10px;
   background: transparent;
 }
 
 .lateral {
+  margin: 10px;
   width: 20%;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 0;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+}
+
+.form {
+  height: 90%;
+  position: relative;
+  margin: 10px;
+  background: transparent;
 }
 
 .lateral h3 {
+  margin: 10px;
   background: white;
   font-weight: 400;
+  font-size: 23px;
+  margin-top: 5vh;
   margin-bottom: 10vh;
+  text-align: center;
 }
 
 .formulario {
+  margin: 10px;
   border-radius: 10px;
+  background: #eef2fa;
 }
 
 .formulario form {
-  background: #eef2fa;
   height: auto;
   margin: 0;
   margin-left: 30px;
@@ -215,10 +283,12 @@
   border: 0;
   background: white;
   width: 100%;
+  height: 4vh;
   margin: 0;
   padding: 8px;
   margin-bottom: 40px;
   border-radius: 5px;
+  border: .075rem solid #ddd;
 }
 
 .formulario button {
@@ -238,13 +308,157 @@
 }
 
 .type {
+  margin: 10px;
   display: none;
 }
 
 .boton {
+  margin: 10px;
   display: flex;
 }
 
 .boton button {
+  margin: 10px;
   margin-left: auto;
+}
+
+.modelsBox {
+  margin: 10px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow: auto;
+  /* box-shadow: inset 15px 15px 15px 1px #bdbec0; */
+}
+
+.modelsBox::-webkit-scrollbar {
+  width: 10px;
+  /* Tamaño del scroll en vertical */
+  /* Tamaño del scroll en horizontal */
+  background: #1e7eeb;
+  border-radius: 4px;
+  /* Ocultar scroll */
+}
+
+.modelsBox::-webkit-scrollbar-thumb {
+  background: #1e7eeb;
+  /* border-radius: 10px; */
+}
+
+.modelsBox::-webkit-scrollbar-thumb:hover {
+  background: #1e7eeb;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modelsBox::-webkit-scrollbar-thumb:active {
+  background: #1e7eeb;
+}
+
+.modelsBox::-webkit-scrollbar-track {
+  background: #fff;
+  /* border-radius: 4px; */
+}
+
+.infoPanel {
+  margin: 10px;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.infoPanel h3 {
+  margin: 10px;
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #5e5e5ec7;
+}
+
+.fix {
+  position: fixed;
+  width: 80%;
+  height: 100vh;
+  background: transparent;
+  top: 0;
+  left: 0;
+}
+
+.container-loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+  bottom: 0;
+}
+
+.container-loader h3 {
+  margin: 0;
+}
+
+.loader {
+  height: 150px;
+  width: 150px;
+  padding: 0;
+}
+
+svg path, svg rect {
+  fill: #2f80ed;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.file {
+  margin-bottom: 5vh;
+}
+
+.fragment {
+  height: auto;
+}
+
+.listado {
+  height: 55%;
+}
+
+.dos {
+  display: flex;
+}
+
+.dos h4 {
+  margin-left: 100px;
+}
+
+.icon_star {
+  width: 30px;
 }

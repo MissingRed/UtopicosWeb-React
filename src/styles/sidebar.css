@@ -1,3 +1,7 @@
+.sidebar>* {
+  margin: 10px;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -7,10 +11,16 @@
   top: 10px;
   left: 10px;
   background: #2f80ed;
+  background: linear-gradient(60deg, #2e98fc, #006cf8);
   width: 80px;
   height: calc(100% - 40px);
   border-radius: 15px;
   transition: all 0.3s ease;
+  margin: 10px;
+}
+
+.perfil img {
+  margin: 10px;
 }
 
 .sidebar .container {
@@ -19,6 +29,7 @@
   align-items: center;
   justify-content: space-between;
   background: transparent;
+  margin: 10px;
 }
 
 .sidebar .container .links, .sidebar .links {
@@ -47,6 +58,7 @@
 .sidebar .info {
   background-color: transparent;
   width: 45px;
+  margin: 10px;
 }
 
 .sidebar .container .dash {
@@ -111,4 +123,5 @@
   outline: none;
   background: transparent;
   opacity: 0.5;
+  margin: 10px;
 }
